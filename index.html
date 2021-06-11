@@ -67,22 +67,51 @@
                         <div class="form-group">
                             <label for="fullName">Full Names</label>
                             <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Enter Full Name">
+                        <small id="error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="residence"></label>
+                            <input name="residence" type="text" class="form-control" id="residence" placeholder="Enter Residence">
+                            <small id="error1"></small>
                         </div>
                         <div class="form-group">
                             <label for="">Nationality</label>
                             <input name="nationality" type="text" class="form-control" id="nationality" placeholder="Enter Nationality">
+                            <small id="error2"></small>
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="Gender"></label>
+                            <select id="gender" name="gender">
+                                <option value="none" selected disabled hidden>Gender</option>
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Other</option>
+                            </select>
+                            <small id="error3"></small>
                         </div>
                         <div class="form-group">
-                            <label for="age">Age</label>
-                            <input name="age" type="number" class="form-control" id="age" placeholder="Enter Your Age">
+                            <label for="age"></label>
+                            <input name="age" type="date" class="form-control" id="age" placeholder="Enter Your date of birth">
+                            <small id="error4"></small>
                         </div>
-                        <div class="form-group">
+                        <div class="input-group form-group">
                             <label for="height">Height</label>
                             <input name="height" type="number" class="form-control" id="height" placeholder="Enter Your Height">
+                            <div class="input-group-append">
+                                <span class="input-group-text">ft</span>
+
+                            </div>
+                            <small id="error5"></small>
                         </div>
-                        <div class="form-group">
+                        <div class="input-group form-group">
                             <label for="weight">Weight</label>
                             <input name="weight" type="number" class="form-control" id="weight" placeholder="Enter Your Height">
+                            <div class="input-group-append">
+                                <span class="input-group-text">Kgs</span>
+
+                            </div>
+                            <small id="error6"></small>
                         </div>
                         <div class="form-group">
                             <label for="fightskill">Fighting Skills</label>
@@ -91,8 +120,9 @@
                                 <option value="">Boxing</option>
                                 <option value="">Kungu fu</option>
                                 <option value="">Karate</option>
-                                <option value="">Jijiutsu</option>
+                                <option value="">Ji-jiutsu</option>
                             </select>
+                            <small id="error7"></small>
                         </div>
                         <div class="form-group">
                             <label for="levels">Level</label>
@@ -102,8 +132,18 @@
                                 <option value="">Intermediate</option>
                                 <option value="">Professional</option>
                             </select>
+                            <small id="error8"></small>
                         </div>
-
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input name="password1" type="text" class="form-control" id="password1" placeholder="Password">
+                            <small id="error9"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for=""></label>
+                            <input name="password2" type="" class="form-control" id="password2" placeholder="Confirm Password">
+                            <small id="error10"></small>
+                        </div>
                         <button name="submit" onclick="checkEmpty()" type="button" class="btn btn-block">Register</button>
                                             
                     </form>
