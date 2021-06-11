@@ -12,7 +12,7 @@ let checkEmpty = () => {
    let level = document.getElementById('levels')
    let passWord = document.getElementById('password1')
    let passWord1 = document.getElementById('password2')
-    let errorEmpty = document.getElementById('error')
+   let errorEmpty = document.getElementById('error')
     let error1 = document.getElementById('error1')
     let error2 = document.getElementById('error2')
     let error3 = document.getElementById('error3')
