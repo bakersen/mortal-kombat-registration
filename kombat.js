@@ -94,7 +94,9 @@ let checkEmpty = () => {
         error10.innerHTML = "please confirm your password"
     }
 
-
+if(passWord.value != passWord1.value){
+    alert('passwords dont match')
+}
 
 
 
