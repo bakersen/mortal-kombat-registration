@@ -164,6 +164,37 @@ var showSuccess = (input) => {
     var error = formField.querySelector('small');
     error.textContent = '';
 }
+function validateForm()
+{
+    //*snipped firstname, surname, email validation*
+    var dob = document.getElementById("age").value;
+   // *snipped dob validation*
+    // var area = document.getElementById("areaofinterest").value;
+    // if (area == "")
+    // {
+    //     alert("Please select an Area of Interest!");
+    //     return false;
+    // }
+
+    var now = new Date();
+    var birthdate = dob.split("/");
+    var born = new Date(birthdate[2], birthdate[0]-1, birthdate[1]);
+    age=get_age(born,now);
+    // if (area == "adults" && age<18)
+    // {
+    //     alert("You need to be 18 years of age and older for the Adults books!");
+    //     return false;
+    // }
+
+}
+
+function get_age(born, now) {
+  var birthday = new Date(now.getFullYear(), born.getMonth(), born.getDate());
+  if (now >= birthday) 
+    return now.getFullYear() - born.getFullYear();
+  else
+    return now.getFullYear() - born.getFullYear() - 1;
+}
 //Validate the username field
 var checkUsername = () => {
 

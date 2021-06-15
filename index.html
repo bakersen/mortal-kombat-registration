@@ -19,32 +19,41 @@
         } */
 
         .section {
-            padding: 20px 0;
+            padding: 40px 0;
             background: url(https://c4.wallpaperflare.com/wallpaper/546/62/471/mortal-kombat-dragon-fire-background-wallpaper-preview.jpg);
             background-size: cover;
+            width: auto;
+            height: auto;
         }
-        input,
-select {
-    padding: 5px 12px 10px 12px;
-    border: 1px solid lightgrey;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-    width: 70%;
-    box-sizing: border-box;
-    color: #2C3E50;
-    font-size: 14px;
-    letter-spacing: 1px
-}
 
-input:focus,
-select:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #304FFE;
-    outline-width: 0
-}
+        small {
+            color: #ff0000;
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        input,
+        select {
+            padding: 5px 5px 10px 5px;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+            margin: 10px 0px 5px 0px;
+            width: 110%;
+            box-sizing: border-box;
+            color: #2C3E50;
+            font-size: 14px;
+            letter-spacing: 1px
+        }
+
+        input:focus,
+        select:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #304FFE;
+            outline-width: 0
+        }
+
         h1,
         h4 {
             text-align: center;
@@ -57,9 +66,10 @@ select:focus {
         }
 
         #outer-div {
-            padding: 20px 30px;
+            padding: 40px 30px;
             background-color: #3a0909b5;
             border-radius: 20px;
+            width: auto;
         }
 
         label {
@@ -85,109 +95,141 @@ select:focus {
                 <h4>Registration For Competition</h4>
 
                 <!-- Inner Div -->
-                
-                <div class="row d-flex justify-content-center" style="width: 120%;" >
+
+                <div class="row d-flex justify-content-center" style="width: auto;">
                     <div class="col-sm-6">
+                        <div>
+                            <div class="row" style="width: auto;">
+                                <div class="col-lg-6 col-md-8 col-sm-2">
+                                    <div class="form-field">
 
-                        <div class="form-field">
-                            
-                            <label for="fullName">Full Names</label>
-                            <input name="fullname" type="text" id="username"
-                                placeholder="Enter Full Name">
-                                <small style="color: #bb0202;"></small>
-                        </div>
-                        <div class="form-field">
-                            
-                            <label for="residence"></label>
-                            <input name="residence" type="text" id="residence"
-                                placeholder="Enter Residence">
-                                <small style="color: #bb0202;"></small>
-                        </div>
-                        <div class="form-field">
-                            
-                            <label for="">Nationality</label>
-                            <input name="nationality" type="text" id="nationality"
-                                placeholder="Enter Nationality">
-                                <small style="color: #bb0202;"></small>
-                        </div>
+                                        <label for="fullName">Full Names</label>
+                                        <input name="fullname" type="text" id="username" placeholder="Enter Full Name">
+                                        <small></small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-8 col-sm-2">
+                                    <div class="form-field">
 
-                        <div class="form-field">
-                            
-                            <label for="Gender"></label>
-                            <select id="gender" name="gender">
-                                <option value="none" selected disabled hidden>Gender</option>
-                                <option value="">Male</option>
-                                <option value="">Female</option>
-                                <option value="">Other</option>
-                            </select>
-                            
-                        </div>
-                        <div class="form-field">
-                            
-                            <label for="age"></label>
-                            <input name="age" type="date" id="age"
-                                placeholder="Enter Your date of birth">
-                                <small style="color: #bb0202;"></small>
-                        </div>
-                        <div class="input-group form-field">
-                            
-                            <label for="height">Height</label>
-                            <input name="height" type="number" id="height"
-                                placeholder="Enter Your Height">
-                            <div class="input-group-append">
-                                <span class="input-group-text" style="margin-top: 10px;">ft</span>
-
+                                        <label for="residence"></label>
+                                        <input name="residence" type="text" id="residence"
+                                            placeholder="Enter Residence">
+                                        <small></small>
+                                    </div>
+                                </div>
                             </div>
-                            <small style="color: #bb0202;"></small>
                         </div>
-                        <div class="input-group form-field">
-                            
-                            <label for="weight">Weight</label>
-                            <input name="weight" type="number" id="weight"
-                                placeholder="Enter Your Weight">
-                            <div class="input-group-append">
-                                <span class="input-group-text" style="margin-top: 10px;">Kgs</span>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="form-field">
+                                    <label for="">Nationality</label>
+                                    <input name="nationality" type="text" id="nationality"
+                                        placeholder="Enter Nationality">
+                                    <small></small>
+                                </div>
                             </div>
-                            <small style="color: #bb0202;"></small>
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="form-field">
+                                    <label for="age"></label>
+                                    <input name="age" type="text" id="age" placeholder="Enter Your date of birth"
+                                        onfocus="(this.type='date')">
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="form-field">
+
+                                    <label for="fightskill">Fighting Skills</label>
+                                    <select id="fightskill" name="user" placeholder="select Fighting Skills">
+                                        <option value="none" selected disabled hidden>Select Fighting Skills</option>
+                                        <option value="">Boxing</option>
+                                        <option value="">Kungu fu</option>
+                                        <option value="">Karate</option>
+                                        <option value="">Ji-jiutsu</option>
+                                    </select>
+                                    <small></small>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="form-field">
+                                    <label for="levels">Level</label>
+                                    <select id="levels" name="user" placeholder="select Fighting Skills">
+                                        <option value="none" selected disabled hidden>Select level</option>
+                                        <option value="">Amatuer</option>
+                                        <option value="">Intermediate</option>
+                                        <option value="">Professional</option>
+                                    </select>
+                                    <small></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-left: 15px;">
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="input-group form-field">
+
+                                    <label for="height">Height</label>
+                                    <input name="height" type="number" id="height" step="0.01" min="0"
+                                        aria-describedby="basic-addon2" class="form-control"
+                                        placeholder="Enter Your Height" style="width: 40%;">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"
+                                            style="margin-top: 10px;">ft</span>
+
+                                    </div>
+                                    <div><small></small></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-sm-2">
+                                <div class="input-group form-field">
+
+                                    <label for="weight">Weight</label>
+                                    <input name="weight" type="number" id="weight" step="0.01" min="0"
+                                        aria-describedby="basic-addon2" class="form-control"
+                                        placeholder="Enter Your Weight" style="width: 40%;">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="basic-addon2"
+                                            style="margin-top: 10px;">Kgs</span>
+                                    </div>
+                                    <div><small></small></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 offset-md-4">
+                                <div class="form-field">
+
+                                    <label for="Gender"></label>
+                                    <select id="gender" name="gender">
+                                        <option value="none" selected disabled hidden>Gender</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                        <option value="">Other</option>
+                                    </select>
+
+                                </div>
+                            </div>
                         </div>
                         <div class="form-field">
-                            
-                            <label for="fightskill">Fighting Skills</label>
-                            <select id="fightskill" name="user" placeholder="select Fighting Skills">
-                                <option value="none" selected disabled hidden>Select Fighting Skills</option>
-                                <option value="">Boxing</option>
-                                <option value="">Kungu fu</option>
-                                <option value="">Karate</option>
-                                <option value="">Ji-jiutsu</option>
-                            </select>
-                            <small></small>
-                        </div>
-                        <div class="form-field">
-                            <label for="levels">Level</label>
-                            <select id="levels" name="user" placeholder="select Fighting Skills">
-                                <option value="none" selected disabled hidden>Select level</option>
-                                <option value="">Amatuer</option>
-                                <option value="">Intermediate</option>
-                                <option value="">Professional</option>
-                            </select>
-                            <small></small>
-                        </div>
-                        <div class="form-field">
-                            
+
                             <label for=""></label>
-                            <input name="password1" type="text" id="password"
-                                placeholder="Password">
-                                <small style="color: #bb0202;"></small>
+                            <input name="password1" type="text" id="password" placeholder="Password">
+                            <small></small>
                         </div>
                         <div class="form-field">
-                          
+
                             <label for=""></label>
                             <input name="confirm-password" type="text" id="confirm-password"
                                 placeholder="Confirm Password">
-                                <small style="color: #bb0202;"></small>
+                            <small></small>
                         </div>
-                        <input class="btn btn-danger" type="submit" value="Register">
-
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3">
+                                <input class="btn btn-danger btn-lg" type="submit" value="Register">
+                            </div>
+                        </div>
 
                     </div>
                 </div>
